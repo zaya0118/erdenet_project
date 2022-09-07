@@ -24,39 +24,39 @@
     <hr class="my-2">
     <ul class="p-3 space-y-2 text-sm text-gray-700">
       <li>
-        <a href="#" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
+        <a href="/building" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
           <img src="../images/logos/building.png" class="w-5 h-5" alt="Avatar">
           <span class="ml-3">Барилга</span>
         </a>
       </li>
       <li>
         <a href="#" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
-          <img src="../images/logos/address.png" class="w-5 h-5" alt="Avatar">
-          <span class="ml-3">Хаяг</span>
+          <img src="../images/logos/black_weather.png" class="w-5 h-5" alt="Avatar">
+          <span class="ml-3">Цаг агаар</span>
         </a>
       </li>
       <li>
         <a href="#" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
-          <img src="../images/logos/infrastructure.png" class="w-5 h-5" alt="Avatar">
-          <span class="ml-3">Дэд бүтэц</span>
+          <img src="../images/logos/black_car.png" class="w-5 h-5" alt="Avatar">
+          <span class="ml-3">Тээврийн GPS систем</span>
         </a>
       </li>
       <li>
         <a href="#" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
-          <img src="../images/logos/road.png" class="w-5 h-5" alt="Avatar">
-          <span class="ml-3">Зам</span>
+          <img src="../images/logos/black_road.png" class="w-5 h-5" alt="Avatar">
+          <span class="ml-3">Замын аюулгүй байдал</span>
         </a>
       </li>
       <li>
         <a href="#" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
-          <img src="../images/logos/bus_station.png" class="w-5 h-5" alt="Avatar">
-          <span class="ml-3">Автобусны буудал</span>
+          <img src="../images/logos/black_news.png" class="w-5 h-5" alt="Avatar">
+          <span class="ml-3">Зарлал</span>
         </a>
       </li>
       <li>
         <a href="#" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
-          <img src="../images/logos/user.png" class="w-5 h-5" alt="Avatar">
-          <span class="ml-3">Хэрэглэгч</span>
+          <img src="../images/logos/black_ad.png" class="w-5 h-5" alt="Avatar">
+          <span class="ml-3">Сурталчилгаа</span>
         </a>
       </li>
     </ul>
@@ -65,13 +65,13 @@
       <ul class="p-3 space-y-2 text-sm text-gray-700">
         <li>
           <a href="#" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
-            <img src="../images/logos/building.png" class="w-5 h-5" alt="Avatar">
-            <span class="ml-3">Барилга</span>
+            <img src="../images/logos/black_user.png" class="w-5 h-5" alt="Avatar">
+            <span class="ml-3">Хэрэглэгч</span>
           </a>
         </li>
         <li>
           <a href="#" class="flex items-center p-2 text-base font-medium text-gray-600 rounded-lg hover:bg-gray-100">
-            <img src="../images/logos/address.png" class="w-5 h-5" alt="Avatar">
+            <img src="../images/logos/black_address.png" class="w-5 h-5" alt="Avatar">
             <span class="ml-3">Хаяг</span>
           </a>
         </li>
