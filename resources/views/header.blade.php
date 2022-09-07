@@ -15,6 +15,16 @@
             </div>
         </div>
 
+        <div class="mt-4 flex items-center justify-center">
+            <div class="flex gap-x-8">
+                <span class="cursor-pointer rounded-xl py-3 px-4 text-sm font-medium text-white bg-gray-200/50 flex" onclick="menuDetail('fields')"> <img src="../images/logos/rainy-day.png" class="h-5 w-5 mr-2" alt="Avatar">Цаг агаар</span>
+                <span class="cursor-pointer rounded-xl py-3 px-4 text-sm font-medium text-white bg-gray-200/50 flex" onclick="menuDetail('crop/rotation')"> <img src="../images/logos/transportation.png" class="h-5 w-5 mr-2" alt="Avatar">Тээврийн GPS систем</span>
+                <span class="cursor-pointer rounded-xl py-3 px-4 text-sm font-medium text-white bg-gray-200/50 flex" onclick="menuDetail('notes')"> <img src="../images/logos/union.png" class="h-5 w-5 mr-2" alt="Avatar">Замын аюулгүй байдал</span>
+                <span class="cursor-pointer rounded-xl py-3 px-4 text-sm font-medium text-white bg-gray-200/50 flex" onclick="menuDetail('planting')"> <img src="../images/logos/announcement.png" class="h-5 w-5 mr-2" alt="Avatar">Зарлал</span>
+                <span class="cursor-pointer rounded-xl py-3 px-4 text-sm font-medium text-white bg-gray-200/50 flex" onclick="menuDetail('fertilizers')"> <img src="../images/logos/advertising.png" class="h-5 w-5 mr-2" alt="Avatar">Сурталчилгаа</span>
+            </div>
+        </div>
+
     </div>
 </div>  
 <script src="https://cdn.tailwindcss.com"></script>
