@@ -7,6 +7,7 @@
     </head>
     @include('admin_header')
     @include('admin_sidebar')
+
     <body class="bg-gray-200">
         <div class="ml-64 p-[1%]">
             <div class="overflow-x-auto relative sm:rounded-lg">
@@ -63,6 +64,7 @@
                                 </div>
                             </div>
                         </div> 
+
                     </div>
                 </div>
                 <table class="w-full text-sm text-left text-gray-500">
