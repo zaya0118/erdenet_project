@@ -19,39 +19,20 @@ Route::get('/', function () {
 Route::get('/admin_home', function () {
     return view('home/admin_home');
 });
-Route::get('/fields', function () {
-    return view('field/fields');
-});
 Route::get('/signup', function () {
     return view('sign/signup');
 });
 Route::get('/signin', function () {
     return view('sign/signin');
 });
-Route::get('/fdata', function () {
-    return view('fdata/fdata');
-});
-Route::get('/fertilizers', function () {
-    return view('fertilizers/fertilizers');
-});
-Route::get('/notes', function () {
-    return view('notes/notes');
-});
-Route::get('/planting', function () {
-    return view('planting/planting');
-});
-Route::get('/weather', function () {
-    return view('weather/weather');
-});
-Route::get('/fieldScript', function () {
-    return view('fieldScript/fields');
-});
-
-Route::get('/crop/rotation', function () {
-    return view('crop/rotation');
-});
 
 Route::get('/building', function () {
     return view('building/building');
+});
+Route::get('/ad', function () {
+    return view('ad/ad');
+});
+Route::get('/weather', function () {
+    return view('weather/weather');
 });
 
