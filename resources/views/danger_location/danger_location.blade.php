@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css"/>
     </head>
     @include('header')
-    @include('home/home_layer')
+    @include('danger_location/danger_layer')
     <body>
         <section>
             <div id="body" class="">
@@ -14,11 +14,4 @@
             </div>
         </section>
     </body>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="/plugins/global/plugins.bundle.js"></script>
-    <script src="/js/scripts.bundle.js"></script> 
-    <script src="./assets/vendor/preline/dist/preline.js"></script>
 </html>
