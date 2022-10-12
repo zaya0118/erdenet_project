@@ -1,13 +1,13 @@
-<div class="overflow-y-auto w-64 h-[calc(100%-4rem)] shadow-md bg-white absolute bg-gray-50" id="sidenavSecExample">
-  <div class="flex pt-4 pb-4 px-6 text-center border-b border-gray-200">
+<div class="w-72 h-[calc(100%-4rem)] shadow-md bg-white absolute bg-gray-50" id="sidenavSecExample">
+  <div class="flex pt-4 pb-4 px-6 justify-center border-b border-gray-200">
     <div class="shrink-0">
       <img src="../images/logos/layer.png" class="w-7 h-7" alt="Avatar">
     </div>
-    <div class="grow ml-2">
-      <p class="text-xl font-semibold text-sky-900">Давхарга</p>
+    <div class="ml-2">
+      <p class="text-xl font-bold text-sky-700">Давхарга</p>
     </div>
   </div>
-  <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-whitetext-gray-900" data-inactive-classes="text-gray-500">
+  <div id="accordion-flush" data-accordion="collapse" class="overflow-y-auto" data-active-classes="bg-whitetext-gray-900" data-inactive-classes="text-gray-500">
     <h2 id="accordion-flush-heading-1">
       <button type="button" class="flex items-center justify-between w-full pt-4 pb-2 px-6 font-medium text-left text-gray-500" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
         <div class="grow">
@@ -40,7 +40,7 @@
           <div class="flex p-2 rounded-xl hover:bg-sky-100">
             <label for="default-toggle-3" class="inline-flex relative items-center w-full cursor-pointer">
               <input type="checkbox" value="" id="default-toggle-3" class="sr-only peer">
-              <div class="w-14 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[22px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
+              <div class="w-12 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[12px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
               <span class="ml-3 text-sm font-medium text-gray-900">Газар зохион байгуулалтын төлөвлөгөө</span>
             </label>
           </div>
@@ -67,6 +67,24 @@
             </div>
         </li>
         <li>
+            <div class="flex p-2 rounded-xl hover:bg-sky-100">
+                <label for="default-toggle-5" class="inline-flex relative items-center w-full cursor-pointer">
+                    <input type="checkbox" value="" id="default-toggle-5" class="sr-only peer">
+                    <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
+                    <span class="ml-3 text-sm font-medium text-gray-900">Бохирын шугам</span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="flex p-2 rounded-xl hover:bg-sky-100">
+                <label for="default-toggle-6" class="inline-flex relative items-center w-full cursor-pointer">
+                    <input type="checkbox" value="" id="default-toggle-6" class="sr-only peer">
+                    <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
+                    <span class="ml-3 text-sm font-medium text-gray-900">Цэврийн шугам</span>
+                </label>
+            </div>
+        </li>
+        <!-- <li>
             <h2 id="accordion-flush-heading-6">
               <button type="button" class="flex items-center justify-between w-full pt-4 pb-2 px-6 font-medium text-left text-gray-500" data-accordion-target="#accordion-flush-body-6" aria-expanded="true" aria-controls="accordion-flush-body-6">
                 <div class="grow">
@@ -97,7 +115,7 @@
                 </li>
               </ul>
             </div>
-        </li>
+        </li> -->
       </ul>
     </div>
     <h2 id="accordion-flush-heading-3">
@@ -112,8 +130,8 @@
       <ul class="p-3 space-y-2 text-sm text-gray-700">
         <li>
             <div class="flex p-2 rounded-xl hover:bg-sky-100">
-                <label for="default-toggle-6" class="inline-flex relative items-center w-full cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-6" class="sr-only peer">
+                <label for="default-toggle-7" class="inline-flex relative items-center w-full cursor-pointer">
+                    <input type="checkbox" value="" id="default-toggle-7" class="sr-only peer">
                     <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
                     <span class="ml-3 text-sm font-medium text-gray-900">Нийтийн тээвэр</span>
                 </label>
@@ -121,8 +139,8 @@
         </li>
         <li>
             <div class="flex p-2 rounded-xl hover:bg-sky-100">
-                <label for="default-toggle-7" class="inline-flex relative items-center w-full cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-7" class="sr-only peer">
+                <label for="default-toggle-8" class="inline-flex relative items-center w-full cursor-pointer">
+                    <input type="checkbox" value="" id="default-toggle-8" class="sr-only peer">
                     <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
                     <span class="ml-3 text-sm font-medium text-gray-900">Машин</span>
                 </label>
@@ -142,8 +160,8 @@
       <ul class="p-3 space-y-2 text-sm text-gray-700">
         <li>
             <div class="flex p-2 rounded-xl hover:bg-sky-100">
-                <label for="default-toggle-8" class="inline-flex relative items-center w-full cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-8" class="sr-only peer">
+                <label for="default-toggle-9" class="inline-flex relative items-center w-full cursor-pointer">
+                    <input type="checkbox" value="" id="default-toggle-9" class="sr-only peer">
                     <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
                     <span class="ml-3 text-sm font-medium text-gray-900">Орон сууц</span>
                 </label>
@@ -151,8 +169,8 @@
         </li>
         <li>
             <div class="flex p-2 rounded-xl hover:bg-sky-100">
-                <label for="default-toggle-9" class="inline-flex relative items-center w-full cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-9" class="sr-only peer">
+                <label for="default-toggle-10" class="inline-flex relative items-center w-full cursor-pointer">
+                    <input type="checkbox" value="" id="default-toggle-10" class="sr-only peer">
                     <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
                     <span class="ml-3 text-sm font-medium text-gray-900">Хувийн сууц</span>
                 </label>
@@ -172,8 +190,8 @@
       <ul class="p-3 space-y-2 text-sm text-gray-700">
         <li>
             <div class="flex p-2 rounded-xl hover:bg-sky-100">
-                <label for="default-toggle-10" class="inline-flex relative items-center w-full cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-10" class="sr-only peer">
+                <label for="default-toggle-11" class="inline-flex relative items-center w-full cursor-pointer">
+                    <input type="checkbox" value="" id="default-toggle-11" class="sr-only peer">
                     <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-sky-600"></div>
                     <span class="ml-3 text-sm font-medium text-gray-900">Эрсдэлтэй газар</span>
                 </label>
@@ -181,6 +199,10 @@
         </li>
       </ul>
     </div>
+  </div>
+  <div class="text-center bottom-0 absolute w-full bg-white">
+    <hr class="m-0">
+    <p class="py-2 text-sm text-gray-700">tailwind-elements.com</p>
   </div>
 </div> 
 
