@@ -38,4 +38,3 @@ Route::get('/weather', function () {
 Route::get('/danger_location', function () {
     return view('danger_location/danger_location');
 });
-
