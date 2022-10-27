@@ -7,134 +7,15 @@
         <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
     </head>
-    @include('header')
     @include('home/home_layer')
     <body>
         <section>
-            <div id="body" class="">
-                <iframe class="ml-72 w-[calc(100%-18rem)] h-[calc(100%-10rem)]" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21392.289171037315!2d106.9096271!3d47.91633805000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smn!4v1661854153803!5m2!1sen!2smn" width="600" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-                <div class="ml-72 w-[calc(100%-18rem)] h-24">
-                    <div class="splide">
-                        <div class="splide__arrows">
-                            <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6 text-white">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                                </svg>
-                            </button>
-                            <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6 text-white">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="splide__track">
-                            <div class="splide__list">
-                                <div class="w-full p-4 shadow splide__slide lg:max-w-lg items-center sm:flex">
-                                    <a href="#" class="mr-2">
-                                        <img class="w-72 rounded-xl sm:rounded-lg" src="../images/logos/ad1.png" alt="ad1">
-                                    </a>
-                                    <div>
-                                        <div class="flex justify-between items-center">
-                                            <h2 class="text-2xl font-bold tracking-tight text-gray-900"><a href="#">Оюу СПА Салон</a></h2>
-                                            <span class="text-sm text-gray-500">14 өдрийн өмнө</span>
-                                        </div>
-                                        <p class="font-light text-gray-500 line-clamp-1 text-justify">Хүчилтөрөгчтэй усан эмчилгээ таны арьсанд шаардлагатай эрдэс усыг нөхөж өгснөөр арьсний үрэвслийг ор мөргүй арилах ба тусгай зориулалтын аппаратаар өнгөн давхаргын бохирдлыг 99% соруулж цэвэрлэнэ.</p>
-                                        <ul class="flex space-x-4 sm:mt-0 justify-between">
-                                            <li>
-                                                <a href="#" class="text-gray-500 hover:text-gray-900">
-                                                Утас: 77400296
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="inline-flex items-center font-medium text-gray-600 hover:underline">
-                                                    Дэлгэрэнгүй
-                                                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="w-full p-4 shadow splide__slide lg:max-w-lg items-center sm:flex">
-                                    <a href="#" class="mr-2">
-                                        <img class="w-72 rounded-xl sm:rounded-lg" src="../images/logos/ad1.png" alt="ad1">
-                                    </a>
-                                    <div>
-                                        <div class="flex justify-between items-center">
-                                            <h2 class="text-2xl font-bold tracking-tight text-gray-900"><a href="#">Оюу СПА Салон</a></h2>
-                                            <span class="text-sm text-gray-500">14 өдрийн өмнө</span>
-                                        </div>
-                                        <p class="font-light text-gray-500 line-clamp-1 text-justify">Хүчилтөрөгчтэй усан эмчилгээ таны арьсанд шаардлагатай эрдэс усыг нөхөж өгснөөр арьсний үрэвслийг ор мөргүй арилах ба тусгай зориулалтын аппаратаар өнгөн давхаргын бохирдлыг 99% соруулж цэвэрлэнэ.</p>
-                                        <ul class="flex space-x-4 sm:mt-0 justify-between">
-                                            <li>
-                                                <a href="#" class="text-gray-500 hover:text-gray-900">
-                                                Утас: 77400296
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="inline-flex items-center font-medium text-gray-600 hover:underline">
-                                                    Дэлгэрэнгүй
-                                                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="w-full p-4 shadow splide__slide lg:max-w-lg items-center sm:flex">
-                                    <a href="#" class="mr-2">
-                                        <img class="w-72 rounded-xl sm:rounded-lg" src="../images/logos/ad1.png" alt="ad1">
-                                    </a>
-                                    <div>
-                                        <div class="flex justify-between items-center">
-                                            <h2 class="text-2xl font-bold tracking-tight text-gray-900"><a href="#">Оюу СПА Салон</a></h2>
-                                            <span class="text-sm text-gray-500">14 өдрийн өмнө</span>
-                                        </div>
-                                        <p class="font-light text-gray-500 line-clamp-1 text-justify">Хүчилтөрөгчтэй усан эмчилгээ таны арьсанд шаардлагатай эрдэс усыг нөхөж өгснөөр арьсний үрэвслийг ор мөргүй арилах ба тусгай зориулалтын аппаратаар өнгөн давхаргын бохирдлыг 99% соруулж цэвэрлэнэ.</p>
-                                        <ul class="flex space-x-4 sm:mt-0 justify-between">
-                                            <li>
-                                                <a href="#" class="text-gray-600 hover:text-gray-900">
-                                                Утас: 77400296
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="inline-flex items-center font-medium text-gray-600 hover:underline">
-                                                    Дэлгэрэнгүй
-                                                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="w-full p-4 shadow splide__slide lg:max-w-lg items-center sm:flex">
-                                    <a href="#" class="mr-2">
-                                        <img class="w-72 rounded-xl sm:rounded-lg" src="../images/logos/ad1.png" alt="ad1">
-                                    </a>
-                                    <div>
-                                        <div class="flex justify-between items-center">
-                                            <h2 class="text-2xl font-bold tracking-tight text-gray-900"><a href="#">Оюу СПА Салон</a></h2>
-                                            <span class="text-sm text-gray-500">14 өдрийн өмнө</span>
-                                        </div>
-                                        <p class="font-light text-gray-500 line-clamp-1 text-justify">Хүчилтөрөгчтэй усан эмчилгээ таны арьсанд шаардлагатай эрдэс усыг нөхөж өгснөөр арьсний үрэвслийг ор мөргүй арилах ба тусгай зориулалтын аппаратаар өнгөн давхаргын бохирдлыг 99% соруулж цэвэрлэнэ.</p>
-                                        <ul class="flex space-x-4 sm:mt-0 justify-between">
-                                            <li>
-                                                <a href="#" class="text-gray-500 hover:text-gray-900">
-                                                Утас: 77400296
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="inline-flex items-center font-medium text-gray-600 hover:underline">
-                                                    Дэлгэрэнгүй
-                                                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="body" class="h-screen w-[80%] ml-[20%]">
+                <button type="button" onclick="sidebar_button()" class="fixed top-1.5 text-white bg-sky-700 hover:bg-sky-800 font-medium rounded-r-lg text-sm p-2.5 text-center inline-flex items-center" id="sidebar_button">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Icon description</span>
+                </button>
+                <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21392.289171037315!2d106.9096271!3d47.91633805000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smn!4v1661854153803!5m2!1sen!2smn" width="600" width="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
             </div>
         </section>
     </body>
@@ -153,5 +34,29 @@
       });
 
       splide.mount();
+    </script>
+     <script>
+        function closeNav(){
+            document.getElementById("sidebar").style.width = "0%";
+            document.getElementById("body").style.marginLeft= "0%";
+            document.getElementById("body").style.width = "100%";
+            document.getElementById("sidebar").style.visibility = "hidden";
+        }
+        $("sidebar_button()" ).trigger("click" 
+        );
+        function sidebar_button(){
+
+        var Changewidth = document.getElementById("sidebar")
+        var Body = document.getElementById("body")
+        var Sidebar = document.getElementById("sidebar")
+
+            if(Changewidth.style.width == "0%") {
+                Changewidth.style.width = "20%";
+                Body.style.width = "80%";
+                Body.style.marginLeft = "20%";
+                Sidebar.style.visibility = 'visible';
+            }
+            
+        } 
     </script>
 </html>
