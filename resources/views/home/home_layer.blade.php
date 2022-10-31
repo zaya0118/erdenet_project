@@ -1,26 +1,75 @@
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
 <div class="h-full shadow-md bg-white w-[20%] fixed bg-gray-50" id="sidebar">
   <div class="flex flex-col bg-[url('../images/logos/erdenet_bg.jpg')] h-52 px-2.5 pt-12">
     <button type="button" id="close_sidebar" onclick="closeNav()" class="absolute top-3 right-2.5 text-gray-50 bg-gray-100/50 hover:bg-gray-200 hover:text-gray-400 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="popup-modal">
       <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      <span class="sr-only">Close modal</span>
+      <span class="sr-only">Close menu</span>
     </button>
     <form>   
       <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
       <div class="relative">
-          <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-              <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-          </div>
-          <input type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-sky-500 focus:border-sky-500" placeholder="Хайх утгаа оруулна уу..." required>
-          <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-sm px-4 py-2">Хайх</button>
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <input type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-sky-500 focus:border-sky-500" placeholder="Хайх утгаа оруулна уу..." required>
+        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-sm px-4 py-2">Хайх</button>
       </div>
     </form>
     <div class="shrink-0 flex justify-between px-4">
       <p class="text-xl font-bold text-white mr-2">Эрдэнэт</p>
     </div>
   </div>
-  <div id="accordion-flush" data-accordion="collapse" class="overflow-y-auto" data-active-classes="bg-whitetext-gray-900" data-inactive-classes="text-gray-500">
+  <div class="p-4 grid grid-cols-4 gap-4 inline-flex items-center justify-items-center">
+    <div class="text-center flex-col">
+      <button type="button" class="w-12 h-12 text-yellow-300 border border-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-100 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
+        <img src="/images/logos/salon.png" class="h-5 w-5" alt="Logo">
+      </button>
+      <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Үсчин</div>
+    </div>
+    <div class="text-center flex-col">
+      <button type="button" class="w-12 h-12 text-slate-700 border border-slate-700 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
+        <img src="/images/logos/makeup.png" class="h-5 w-5" alt="Logo">
+      </button>
+      <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Гоо сайхан</div>
+    </div>
+    <div class="text-center flex-col">
+      <button type="button" class="w-12 h-12 text-green-700 border border-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
+        <img src="/images/logos/medicine.png" class="h-5 w-5" alt="Logo">
+      </button>
+      <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Эмийн сан</div>
+    </div>
+    <div class="text-center flex-col">
+      <button type="button" class="w-12 h-12 text-purple-700 border border-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
+        <img src="/images/logos/car-service.png" class="h-5 w-5" alt="Logo">
+      </button>
+      <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Авто засвар</div>
+    </div>
+    <div class="text-center flex-col">
+      <button type="button" class="w-12 h-12 text-orange-500 border border-orange-500 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
+        <img src="/images/logos/teather.png" class="h-5 w-5" alt="Logo">
+      </button>
+      <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Кино театр</div>
+    </div>
+    <div class="text-center flex-col">
+      <button type="button" class="w-12 h-12 text-pink-700 border border-pink-700 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
+        <img src="/images/logos/food.png" class="h-5 w-5" alt="Logo">
+      </button>
+      <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Хоолны газар</div>
+    </div>
+    <div class="text-center flex-col">
+      <button type="button" class="w-12 h-12 text-sky-700 border border-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
+        <img src="/images/logos/more.png" class="h-5 w-5" alt="Logo">
+      </button>
+      <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Дэлгэрэнгүй</div>
+    </div>
+    <div class="text-center flex-col">
+      <button type="button" class="w-12 h-12 text-red-700 border border-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
+        <img src="/images/logos/save.png" class="h-5 w-5" alt="Logo">
+      </button>
+      <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Хадгалсан</div>
+    </div>
+  </div>
+  <!-- <div id="accordion-flush" data-accordion="collapse" class="overflow-y-auto" data-active-classes="bg-white text-gray-900" data-inactive-classes="text-gray-500">
     <h2 id="accordion-flush-heading-1">
       <button type="button" class="flex items-center justify-between w-full pt-4 pb-2 px-6 font-medium text-left text-gray-500" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
         <div class="grow">
@@ -348,123 +397,81 @@
         </li>
       </ul>
     </div>
-  </div>
-  <div class="text-center bottom-0 absolute w-full h-48 bg-gradient-to-r from-sky-600 to-sky-900 rounded-t-2xl shadow-md">
-    <div class="splide">
-      <div class="splide__arrows">
-        <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="w-6 h-6 text-white">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-          </svg>
-        </button>
-        <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="w-6 h-6 text-white">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-          </svg>
-        </button>
-      </div>
-      <div class="splide__track">
-        <div class="splide__list">
-          <div class="w-full p-4 shadow splide__slide lg:max-w-lg items-center sm:flex">
-            <a href="#" class="mr-2">
-              <img class="w-72 rounded-xl sm:rounded-lg" src="../images/logos/ad1.png" alt="ad1">
-            </a>
-            <div>
-              <div class="flex justify-between items-center">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-50"><a href="#">Оюу СПА Салон</a></h2>
-                <span class="text-sm text-gray-50">14 өдрийн өмнө</span>
+  </div> -->
+  <div class="splide bottom-0 absolute w-full h-60 rounded-t-2xl">
+    <div class="splide__arrows">
+      <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 h-6 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+        </svg>
+      </button>
+      <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 h-6 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+        </svg>
+      </button>
+    </div>
+    <div class="splide__track">
+      <div class="splide__list">
+        <div class="shadow splide__slide lg:max-w-lg items-center sm:flex">
+          <div class="relative group overflow-hidden bg-black w-full rounded-t-2xl items-center justify-center">
+            <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1650&q=80" />
+            <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+            <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
+              <div class="absolute w-full flex place-content-center">
+                <p class="capitalize font-serif font-bold text-3xl text-center shadow-2xl text-white mt-5">Зарын гарчиг</p>
               </div>
-              <p class="font-light text-gray-50 line-clamp-1 text-justify">Хүчилтөрөгчтэй усан эмчилгээ таны арьсанд шаардлагатай эрдэс усыг нөхөж өгснөөр арьсний үрэвслийг ор мөргүй арилах ба тусгай зориулалтын аппаратаар өнгөн давхаргын бохирдлыг 99% соруулж цэвэрлэнэ.</p>
-              <ul class="flex space-x-4 sm:mt-0 justify-between">
-                <li>
-                  <a href="#" class="text-gray-50">
-                  Утас: 77400296
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="inline-flex items-center font-medium text-gray-50 hover:underline">
-                    Дэлгэрэнгүй
-                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="absolute w-full flex place-content-center mt-10">
+                <p class="font-sans text-center w-4/5 text-white mt-5 line-clamp-3">Зарын үндсэн агуулга хэсгийг энд оруулна уу!</p>
+              </div>
+              <button class="absolute left-1/4 bottom-4 bg-white text-black font-bold rounded-lg h-10 w-48">Холбогдох</button>
             </div>
           </div>
-          <div class="w-full p-4 shadow splide__slide lg:max-w-lg items-center sm:flex">
-            <a href="#" class="mr-2">
-              <img class="w-72 rounded-xl sm:rounded-lg" src="../images/logos/ad1.png" alt="ad1">
-            </a>
-            <div>
-              <div class="flex justify-between items-center">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-50"><a href="#">Оюу СПА Салон</a></h2>
-                <span class="text-sm text-gray-50">14 өдрийн өмнө</span>
+        </div>
+        <div class="shadow splide__slide lg:max-w-lg items-center sm:flex">
+          <div class="relative group overflow-hidden bg-black w-full rounded-t-2xl items-center justify-center">
+            <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1650&q=80" />
+            <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+            <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
+              <div class="absolute w-full flex place-content-center">
+                <p class="capitalize font-serif font-bold text-3xl text-center shadow-2xl text-white mt-5">Зарын гарчиг</p>
               </div>
-              <p class="font-light text-gray-50 line-clamp-1 text-justify">Хүчилтөрөгчтэй усан эмчилгээ таны арьсанд шаардлагатай эрдэс усыг нөхөж өгснөөр арьсний үрэвслийг ор мөргүй арилах ба тусгай зориулалтын аппаратаар өнгөн давхаргын бохирдлыг 99% соруулж цэвэрлэнэ.</p>
-              <ul class="flex space-x-4 sm:mt-0 justify-between">
-                <li>
-                  <a href="#" class="text-gray-50">
-                  Утас: 77400296
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="inline-flex items-center font-medium text-gray-50 hover:underline">
-                    Дэлгэрэнгүй
-                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="absolute w-full flex place-content-center mt-10">
+                <p class="font-sans text-center w-4/5 text-white mt-5 line-clamp-3">Зарын үндсэн агуулга хэсгийг энд оруулна уу!</p>
+              </div>
+              <button class="absolute left-1/4 bottom-4 bg-white text-black font-bold rounded-lg h-10 w-48">Холбогдох</button>
             </div>
           </div>
-          <div class="w-full p-4 shadow splide__slide lg:max-w-lg items-center sm:flex">
-            <a href="#" class="mr-2">
-              <img class="w-72 rounded-xl sm:rounded-lg" src="../images/logos/ad1.png" alt="ad1">
-            </a>
-            <div>
-              <div class="flex justify-between items-center">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-50"><a href="#">Оюу СПА Салон</a></h2>
-                <span class="text-sm text-gray-50">14 өдрийн өмнө</span>
+        </div>
+        <div class="shadow splide__slide lg:max-w-lg items-center sm:flex">
+          <div class="relative group overflow-hidden bg-black w-full rounded-t-2xl items-center justify-center">
+            <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1650&q=80" />
+            <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+            <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
+              <div class="absolute w-full flex place-content-center">
+                <p class="capitalize font-serif font-bold text-3xl text-center shadow-2xl text-white mt-5">Зарын гарчиг</p>
               </div>
-              <p class="font-light text-gray-50 line-clamp-1 text-justify">Хүчилтөрөгчтэй усан эмчилгээ таны арьсанд шаардлагатай эрдэс усыг нөхөж өгснөөр арьсний үрэвслийг ор мөргүй арилах ба тусгай зориулалтын аппаратаар өнгөн давхаргын бохирдлыг 99% соруулж цэвэрлэнэ.</p>
-              <ul class="flex space-x-4 sm:mt-0 justify-between">
-                <li>
-                  <a href="#" class="text-gray-50">
-                  Утас: 77400296
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="inline-flex items-center font-medium text-gray-50 hover:underline">
-                    Дэлгэрэнгүй
-                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="absolute w-full flex place-content-center mt-10">
+                <p class="font-sans text-center w-4/5 text-white mt-5 line-clamp-3">Зарын үндсэн агуулга хэсгийг энд оруулна уу!</p>
+              </div>
+              <button class="absolute left-1/4 bottom-4 bg-white text-black font-bold rounded-lg h-10 w-48">Холбогдох</button>
             </div>
           </div>
-          <div class="w-full p-4 shadow splide__slide lg:max-w-lg items-center sm:flex">
-            <a href="#" class="mr-2">
-              <img class="w-72 rounded-xl sm:rounded-lg" src="../images/logos/ad1.png" alt="ad1">
-            </a>
-            <div>
-              <div class="flex justify-between items-center">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-50"><a href="#">Оюу СПА Салон</a></h2>
-                <span class="text-sm text-gray-50">14 өдрийн өмнө</span>
+        </div>
+        <div class="shadow splide__slide lg:max-w-lg items-center sm:flex items-center justify-center">
+          <div class="relative group overflow-hidden bg-black w-full rounded-t-2xl">
+            <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1650&q=80" />
+            <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+            <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
+              <div class="absolute w-full flex place-content-center">
+                <p class="capitalize font-serif font-bold text-3xl text-center shadow-2xl text-white mt-5">Зарын гарчиг</p>
               </div>
-              <p class="font-light text-gray-50 line-clamp-1 text-justify">Хүчилтөрөгчтэй усан эмчилгээ таны арьсанд шаардлагатай эрдэс усыг нөхөж өгснөөр арьсний үрэвслийг ор мөргүй арилах ба тусгай зориулалтын аппаратаар өнгөн давхаргын бохирдлыг 99% соруулж цэвэрлэнэ.</p>
-              <ul class="flex space-x-4 sm:mt-0 justify-between">
-                <li>
-                  <a href="#" class="text-gray-50">
-                  Утас: 77400296
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="inline-flex items-center font-medium text-gray-50 hover:underline">
-                    Дэлгэрэнгүй
-                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="absolute w-full flex place-content-center mt-10">
+                <p class="font-sans text-center w-4/5 text-white mt-5 line-clamp-3">Зарын үндсэн агуулга хэсгийг энд оруулна уу!</p>
+              </div>
+              <button class="absolute left-1/4 bottom-4 bg-white text-black font-bold rounded-lg h-10 w-48">Холбогдох</button>
             </div>
           </div>
         </div>
