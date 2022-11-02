@@ -35,6 +35,26 @@ Route::get('/ad', function () {
 Route::get('/weather', function () {
     return view('weather/weather');
 });
-Route::get('/danger_location', function () {
-    return view('danger_location/danger_location');
+
+
+//bar
+
+Route::get('/organization_bar', function () {
+    return view('bar/organization_bar');
+});
+
+Route::get('/danger_bar', function () {
+    return view('bar/danger_bar');
+});
+
+Route::get('/build_bar', function () {
+    return view('bar/build_bar');
+});
+
+Route::get('/weather_bar', function () {
+    return view('bar/weather_bar');
+});
+
+Route::get('/estate_bar', function () {
+    return view('bar/estate_bar');
 });

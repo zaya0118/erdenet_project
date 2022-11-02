@@ -13,21 +13,21 @@
             <div id="body" class="h-screen w-[calc(100%-384px)] ml-[384px]">
                 <button type="button" onclick="sidebar_button()" class="fixed top-1.5 text-white bg-sky-700 hover:bg-sky-800 font-medium rounded-r-lg text-sm p-2.5 text-center inline-flex items-center" id="sidebar_button">
                     <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    <span class="sr-only">Open menu</span>
+                    <span class="sr-only">Open layer</span>
                 </button>
                 <div class="fixed flex space-x-4 top-1.5 right-2.5">
                     <div class="w-72 space-x-4 h-12 bg-gray-50 rounded-full p-2.5 shadow-xl inline-flex items-center justify-center border-4 border-sky-700/50">
-                        <a type="button" onclick="layerMore('apartment')" class="hover:bg-sky-700/20 p-2 rounded-full">
+                        <a class="hover:bg-sky-700/20 p-2 rounded-full" onclick="layerMore('build_bar')"> 
                             <img src="/images/logos/apartment.png" class="h-5 w-5" alt="Logo">
+                        </a>
+                        <a class="hover:bg-sky-700/20 p-2 rounded-full" onclick="layerMore('danger_bar')"> 
+                            <img src="/images/logos/danger.png" class="h-5 w-5" alt="Logo">
                         </a>
                         <a type="button" class="hover:bg-sky-700/20 p-2 rounded-full">
                             <img src="/images/logos/bus.png" class="h-5 w-5" alt="Logo">
                         </a>
                         <a type="button" class="hover:bg-sky-700/20 p-2 rounded-full">
                             <img src="/images/logos/road.png" class="h-5 w-5" alt="Logo">
-                        </a>
-                        <a type="button" onclick="layerMore('danger')" class="hover:bg-sky-700/20 p-2 rounded-full">
-                            <img src="/images/logos/danger.png" class="h-5 w-5" alt="Logo">
                         </a>
                         <a id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" type="button" class="hover:bg-sky-700/20 p-2 rounded-full">
                             <img src="/images/logos/layer.png" class="h-5 w-5" alt="Logo">
@@ -300,12 +300,18 @@
                         <span class="ml-3 font-semibold">Нэвтрэх</span>
                     </a>
                     <a type="button" class="w-12 h-12 bg-gray-50 rounded-full p-2.5 shadow-xl inline-flex items-center justify-center border-4 border-sky-700/50">
-                        <img src="/images/logos/menu.png" class="h-5 w-5" alt="Logo"> 
+                        <img src="/images/logos/layer.png" class="h-5 w-5" alt="Logo"> 
                         <span class="sr-only">Right bar</span>
                     </a>
                 </div>
-                <div class="fixed flex bg-gray-50 rounded-3xl w-[500px] h-[700px] top-32 right-2.5 border-4 border-sky-700/50" id="layer-detail"></div>
+                <div class="z-20 fixed bg-gray-50 shadow-md rounded-3xl max-w-[500px] max-h-[700px] top-32 right-2.5 border-4 border-sky-700/50 overflow-hidden" id="layer-more"></div>
                 <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21392.289171037315!2d106.9096271!3d47.91633805000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smn!4v1661854153803!5m2!1sen!2smn" width="600" width="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+            <div class="loader" id="loader-div" style="display: none">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
             </div>
         </section>
     </body>
@@ -352,10 +358,10 @@
         } 
     </script>
     <script>
-        function layerMore(divName)
+        function layerMore(divName)                                
         {
             $("#loader-div").show();
-            var Changeheight = document.getElementById("field_detial");
+            var Changeheight = document.getElementById("layer_more");
             if(Changeheight)
             {
                 Changeheight.style.height = "0%"
@@ -373,7 +379,7 @@
                     },
                     success: function(response) {
                         $("#layer-more").empty().html(response);
-                        $("# ").hide();
+                        $("#loader-div").hide();
                     },
                     error: function(xhr, textStatus, error) {
                         console.log(xhr.statusText);
