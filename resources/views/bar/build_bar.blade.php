@@ -1,51 +1,66 @@
-<div class="p-4 grid grid-cols-4 gap-4 inline-flex items-center justify-items-center">
-  <div class="text-center flex-col">
-    <button type="button" class="w-12 h-12 text-yellow-300 border-4 border-yellow-300/80 focus:ring-4 focus:outline-none focus:ring-yellow-100 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
-      <img src="/images/logos/salon.png" class="h-5 w-5" alt="Logo">
-    </button>
-    <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Үсчин</div>
-  </div>
-  <div class="text-center flex-col">
-    <button type="button" class="w-12 h-12 text-slate-700 border-4 border-slate-700/80 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
-      <img src="/images/logos/makeup.png" class="h-5 w-5" alt="Logo">
-    </button>
-    <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Гоо сайхан</div>
-  </div>
-  <div class="text-center flex-col">
-    <button type="button" class="w-12 h-12 text-green-700 border-4 border-green-700/80 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
-      <img src="/images/logos/medicine.png" class="h-5 w-5" alt="Logo">
-    </button>
-    <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Эмийн сан</div>
-  </div>
-  <div class="text-center flex-col">
-    <button type="button" class="w-12 h-12 text-purple-700 border-4 border-purple-700/80 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
-      <img src="/images/logos/car-service.png" class="h-5 w-5" alt="Logo">
-    </button>
-    <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Авто засвар</div>
-  </div>
-  <div class="text-center flex-col">
-    <button type="button" class="w-12 h-12 text-orange-500 border-4 border-orange-500/80 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
-      <img src="/images/logos/teather.png" class="h-5 w-5" alt="Logo">
-    </button>
-    <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Кино театр</div>
-  </div>
-  <div class="text-center flex-col">
-    <button type="button" class="w-12 h-12 text-pink-700 border-4 border-pink-700/80 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
-      <img src="/images/logos/food.png" class="h-5 w-5" alt="Logo">
-    </button>
-    <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Хоолны газар</div>
-  </div>
-  <div class="text-center flex-col">
-    <button type="button" class="w-12 h-12 text-sky-700 border-4 border-sky-700/80 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
-      <img src="/images/logos/more.png" class="h-5 w-5" alt="Logo">
-    </button>
-    <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Дэлгэрэнгүй</div>
-  </div>
-  <div class="text-center flex-col">
-    <button type="button" class="w-12 h-12 text-red-700 border-4 border-red-700/80 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center justify-center">
-      <img src="/images/logos/save.png" class="h-5 w-5" alt="Logo">
-    </button>
-    <div class="text-xs font-medium text-gray-900 mt-2 w-18 h-10">Хадгалсан</div>
+<div class="p-4 pt-8">
+  <div class="grid place-items-center font-medium">
+    <div class="bg-sky-700/50 h-full w-full rounded-3xl">
+      <div class="flex justify-center items-center leading-none">
+        <img
+          src="../images/logos/office.jpg"
+          alt="pic"
+          class="h-40 w-72 rounded-md shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"
+        />
+      </div>
+      <div class="p-3">
+        <p class="text-xl block mb-1 font-bold text-gray-50">Байгууллагын нэр</p>
+        <p class="text-base tracking-tighter text-gray-50">
+          When it is your time, it’s your time. There is no point in worrying
+          about what you can’t control.
+        </p>
+      </div>
+      <div class="flex justify-between items-center p-2">
+        <div class="flex">
+          <div class="flex flex-wrap">
+            <div class="mb-2 grow-0 shrink-0 basis-auto w-full lg:w-1/2 px-1 lg:px-2">
+              <div class="flex items-start">
+                <div class="shrink-0">
+                  <div class="p-2 bg-sky-900 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                    <img src="/images/logos/phone-call.png" class="h-5 w-5" alt="Logo">
+                  </div>
+                </div>
+                <div class="grow ml-2">
+                  <p class="font-bold mb-1 text-gray-50">Утас</p>
+                  <p class="text-gray-50 text-sm">+1 234-567-89</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 grow-0 shrink-0 basis-auto w-full lg:w-1/2 px-1 lg:px-2">
+              <div class="flex items-start">
+                <div class="shrink-0">
+                  <div class="p-2 bg-sky-900 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                    <img src="/images/logos/mail.png" class="h-5 w-5" alt="Logo">
+                  </div>
+                </div>
+                <div class="grow ml-2">
+                  <p class="font-bold mb-1 text-gray-50">И-мейл</p>
+                  <p class="text-gray-50 text-sm">sales@example.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 grow-0 shrink-0 basis-auto w-full lg:w-full px-1 lg:px-2">
+              <div class="flex align-start">
+                <div class="shrink-0">
+                  <div class="p-2 bg-sky-900 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                    <img src="/images/logos/address.png" class="h-5 w-5" alt="Logo">
+                  </div>
+                </div>
+                <div class="grow ml-2">
+                  <p class="font-bold mb-1 text-gray-50">Хаяг</p>
+                  <p class="text-gray-50 text-sm">Байгууллагын байршилын дэлгэрэнгүй мэдээллийг оруулна уу.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div> 
 
