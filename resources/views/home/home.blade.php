@@ -378,6 +378,7 @@
                         
                     },
                     success: function(response) {
+                        $("#layer-more").show()
                         $("#layer-more").empty().html(response);
                         $("#loader-div").hide();
                     },
@@ -391,5 +392,12 @@
                 });
             }, 100);
         }
+
+
+
+
+        $("#dropdownCheckboxButton").on('click', function(){
+            $("#layer-more").hide();
+        });
     </script>
 </html>
